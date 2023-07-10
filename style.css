@@ -40,7 +40,7 @@ body{
 #top p{
     max-width: 500px;
     text-align: center;
-    color: grey;
+    color: white;
 }
 
 #top hr{
@@ -141,3 +141,4 @@ body{
         padding: 20px 20px;
     }
 }
+
