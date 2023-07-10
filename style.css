@@ -14,7 +14,7 @@ body{
     justify-content: center;
     /* background-image: url("/Images/front\ img\ white\ bg.jpg"); */
     /* background-size: cover; */
-    background-color: black;
+    /* background-color: black; */
 }
 #top{
     display:flex ;
@@ -76,13 +76,15 @@ body{
     /* margin: 20px; */
     text-decoration: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
 .white-color{
     color: white;
 }
 
+.black-color{
+    color: black;
+}
 
 .card p{
     font-size: 24px;
@@ -90,12 +92,12 @@ body{
 }
 
 .scale{
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .scale:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0,0,0,1);
-    color: rgb(215, 215, 215);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    filter: brightness(1.2);
 }
 
 .blue-bg{
@@ -113,11 +115,29 @@ body{
 .red-bg{
     background-color: #ff0000;
 }
-
+.green-bg{
+    background-color: #25D366;
+}
+.light-red-bg{
+    background-color: #DB4437;
+}
 
 @media screen and (max-width: 1000px){
     #main{
         grid-template-columns: 1fr;
+        padding: 20px 10px;
+        grid-gap: 15px;
+    }
+    .card{
+        height: 60px;
+    }
+    .scale:hover{
+        transform: scale(1.03);
+    }
+}
 
+@media screen and (max-width: 350px){
+    #main{
+        padding: 20px 20px;
     }
 }
