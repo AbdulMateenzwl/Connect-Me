@@ -20,13 +20,13 @@ body{
     display:flex ;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
+    margin: 10px 10px;
 
 }
 
 #my-image{
-    height: 25vh;
-    width: 25vh;
+    height: 30vh;
+    width: 30vh;
     border-radius: 500px ;
     border: 2px solid white;
 }
@@ -134,11 +134,20 @@ body{
     .scale:hover{
         transform: scale(1.03);
     }
+    #my-image{
+        height: 200px;
+        width: 200px;
+    }
+
+
 }
 
 @media screen and (max-width: 350px){
     #main{
         padding: 20px 20px;
+    }
+    #top h1{
+        font-size: 2rem;
     }
 }
 
