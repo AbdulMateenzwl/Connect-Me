@@ -118,8 +118,20 @@ body{
 .green-bg{
     background-color: #25D366;
 }
+.dark-green-bg{
+    background-color: #00B760;
+}
 .light-red-bg{
     background-color: #DB4437;
+}
+.black-bg{
+    background-color: black;
+}
+.orange-bg{
+    background-color: #E24329;
+}
+.orange-bg2{
+    background-color: #F79E1B;
 }
 
 @media screen and (max-width: 1000px){
