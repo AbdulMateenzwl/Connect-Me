@@ -12,9 +12,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-image: url("/Images/front\ img\ white\ bg.jpg"); */
-    /* background-size: cover; */
-    /* background-color: black; */
+    height: 100vh;
 }
 #top{
     display:flex ;
@@ -103,6 +101,9 @@ body{
 .blue-bg{
     background-color: #3B5180;
 }
+.dark-blue-bg2{
+    background-color: #323754;
+}
 .pink-bg{
     background-color: #DD2A7B;
 }
@@ -133,6 +134,37 @@ body{
 .orange-bg2{
     background-color: #F79E1B;
 }
+.yellow-bg{
+    background-color: #F7B928;
+}
+.brown-bg{
+    background-color: #7c4516;
+}
+
+
+footer{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: black;
+    width: 100%;
+    filter: opacity(.5);
+    margin-top: auto;
+}
+
+footer p{
+    color: white;
+    font-size: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    font: bolder;
+    color: white;
+}
+
+
 
 @media screen and (max-width: 1000px){
     #main{
