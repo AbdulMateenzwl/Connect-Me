@@ -142,6 +142,10 @@ body {
 .green-bg {
   background-color: #558d44;
 }
+.dark-red-bg {
+  background-color: #AB341D;
+}
+
 
 footer {
   display: flex;
