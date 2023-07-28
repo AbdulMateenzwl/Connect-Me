@@ -299,7 +299,10 @@
                     <p><strong>Tumblr</strong></p>
                 </div>
             </a>
-            <a href=" https://www.producthunt.com/@abdulmateenzwl" target="_blank">
+            <a
+                href=" https://www.producthunt.com/@abdulmateenzwl"
+                target="_blank"
+            >
                 <div class="card light-red-bg white-color scale">
                     <i class="fa-brands fa-product-hunt fa-2x"></i>
                     <p><strong>ProductHunt</strong></p>
@@ -317,7 +320,10 @@
                     <p><strong>SnapChat</strong></p>
                 </div>
             </a>
-            <a href="https://www.quora.com/profile/Abdul-Mateen-1199" target="_blank">
+            <a
+                href="https://www.quora.com/profile/Abdul-Mateen-1199"
+                target="_blank"
+            >
                 <div class="card light-red-bg white-color scale">
                     <i class="fa-brands fa-quora fa-2x"></i>
                     <p><strong>Quora</strong></p>
@@ -329,13 +335,19 @@
                     <p><strong>Post.NEWS</strong></p>
                 </div>
             </a>
-            <a href="https://www.reddit.com/user/abdulmateenzwl/" target="_blank">
+            <a
+                href="https://www.reddit.com/user/abdulmateenzwl/"
+                target="_blank"
+            >
                 <div class="card red-bg white-color scale">
                     <i class="fa-brands fa-reddit fa-2x"></i>
                     <p><strong>Reddit</strong></p>
                 </div>
             </a>
-            <a href="https://www.strava.com/athletes/abdulmateenzwl" target="_blank">
+            <a
+                href="https://www.strava.com/athletes/abdulmateenzwl"
+                target="_blank"
+            >
                 <div class="card light-red-bg white-color scale">
                     <i class="fa-brands fa-product-hunt fa-2x"></i>
                     <p><strong>Strava</strong></p>
@@ -402,16 +414,15 @@
 
         <footer>
             <p class="text-center">
-                Made with <i class="fa-solid fa-heart red-color"></i> by <a
-                    href="https://instagram.com/abdulmateenzwl"
-                    target="_blank"
+                Made with <i class="fa-solid fa-heart red-color"></i> by
+                <a href="https://instagram.com/abdulmateenzwl" target="_blank"
                     >Abdul Mateen</a
                 >
             </p>
         </footer>
 
         <script>
-            function searchLinks() {
+            function searchLinks(event) {
                 var input, filter, cards, cardContainer, h5, title, i;
                 input = document.getElementById('searchInput');
                 filter = input.value.toUpperCase();
@@ -427,12 +438,21 @@
                     }
                 }
             }
+
             function handleKeyDown(event) {
                 if (event.key === 'Enter') {
                     event.preventDefault(); // Prevent the default form submission behavior
                     document.getElementById('searchInput').blur(); // Remove focus from the input field
                 }
             }
+            
+            document.addEventListener('keydown', function (e) {
+                if (e.keyCode == 27) {
+                    document.getElementById('searchInput').value = '';
+                    document.getElementById('searchInput').blur(); // Remove focus from the input field
+                    searchLinks();
+                }
+            });
         </script>
 
         <script
